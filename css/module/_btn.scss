@@ -1,0 +1,61 @@
+.btn {
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 50px;
+    display: inline-block;
+    @include transition;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.btn-small {
+    height: 25;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    padding: 0 15px;
+    display: inline-block;
+    @include transition;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.btn-primary {
+    background-color: $blue;
+
+    &:hover {
+        background-color: darken($blue, 10);
+    }
+}
+
+.btn-danger {
+    background-color: $red;
+
+    &:hover {
+        background-color: darken($red, 10);
+    }
+}
+
+.btn-success {
+    background-color: $green;
+
+    &:hover {
+        background-color: darken($green, 10);
+    }
+}

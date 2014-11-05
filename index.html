@@ -1,18 +1,101 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>Versace app</title>
         <link rel="stylesheet" href="css/app.css">
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
     </head>
     <body>
-        <h1>Gorvelyfab github.io page</h1>
+        <div class="sidebar col-md-3">
+            <div class="row">
+                <div class="page-brand">
+                    <i class="icon icon-drapo"></i> &nbsp; <a class="page-brand-title">Archive apps</a>
+                </div>
 
-        <h2>it works !!!</h2>
+                <nav class="sidebar-menu">
+                  <a href="#"><i class="icon icon-archive"></i> Archives</a>
+                  <a href="#"><i class="icon icon-group-friend"></i> Expiditeurs</a>
+                  <a href="#"><i class="icon icon-friend"></i> Mon compte</a>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-9 col-md-push-3 l-container">
+           <div class="row">
+               <header class="header">
+                   <div class="header-search">
+                       <form action="" class="__form-search">
+                           <input type="text" class="form-search-input class="input"" placeholder="Rechercher un document">
+                           <button class="form-search-button"><i class="icon icon-search"></i></button>
+                       </form>
+                   </div>
+                   <div class="header-user">
+                       <div class="user-picture">
+                           <img src="img/user-picture.png" alt="photo utilisateur">
+                       </div>
+                       <div class="user-message">
+                           <p class="user-name font-bold">Bonjour JANE DOE</p>
+                           <p class="user-content">nous vous souhaitons un travail agréable</p>
+                       </div>
+                       <div class="user-disconnet">
+                           <a href="#"><i class="icon icon-disconnet"></i> <br>Déconnexion</a>
+                       </div>
+                       <div class="clear"></div>
+                   </div>
+                   <div class="menu">
+                       <a href="" class="menu-item active">Ajouter</a>
+                       <a href="" class="menu-item">Lister</a>
+                   </div>
+               </header>
+               <section class="content">
+                    <form action="#" enctype="multipart/form-data" method="post">
+
+                      <div class="col-md-6">
+                        <div class="group">
+                          <input class="input" type="text" required>
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Nom document</label>
+                        </div>
+
+                        <div class="group">
+                          <input class="input" type="text" required>
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Description</label>
+                        </div>
+
+                        <div class="group">
+                          <input class="input" type="text" required>
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label>Libelle</label>
+                        </div>
+
+                        <div class="group">
+                          <select class="select" name="" id="">
+                            <option value="1">Gorvely tasinda</option>
+                            <option value="2">John Doe</option>
+                            <option value="3">Pièrre La france</option>
+                          </select>
+                        </div>
+
+                        <button class="btn btn-primary">Ajouter</button>
+                      </div>
+
+                      <div class="col-md-3">
+                          <p id="file-message">Ajouter un fichier</p>
+                          <div class="file-container">
+                            <input type="file" id="file">
+                          </div>
+                      </div>
+
+                    </form>
+
+               </section>
+           </div>
+        </div>
+      <script src="js/jquery.js"></script>
+      <script src="js/main.js"></script>
     </body>
 </html>

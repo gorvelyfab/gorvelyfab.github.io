@@ -1,0 +1,30 @@
+@import "compass";
+
+
+$silver: #d4d8d8;
+$blue: #7ecefd;
+$red: #ff7f66;
+$green: #00c853;
+
+
+$default-text-color: #95a5a6;
+$secondary-text-color: #32383f;
+$default-transiton-duration: .3s;
+
+
+@import "tools/bootstrap";
+@import "base/base";
+@import "tools/tools";
+
+
+@import "layout/layout";
+
+
+
+@import "module/icon";
+@import "module/sidebar";
+@import "module/header";
+@import "module/content";
+@import "module/form";
+@import "module/btn";
+@import "module/alert";

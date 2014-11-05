@@ -1,0 +1,132 @@
+.header {
+    background-color: #fff;
+    top: 0;
+    left: 25%;
+    right: 0;
+    z-index: 4;
+
+    .header-search {
+        position: relative;
+        display: block;
+        height: 100px;
+        border-bottom: 1px solid $silver;
+    }
+
+    .__form-search {
+        top: 30px;
+        right: 15px;
+        position: absolute;
+    }
+
+    .form-search-input {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        display: inline-block;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .form-search-button {
+        background-color: transparent!important;
+        border: none;
+    }
+
+    .header-user {
+        padding-left: 30px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .user-picture {
+        width: 81px;
+        height: 81px;
+        float: left;
+    }
+
+    .user-name, .user-content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .user-message {
+        float: left;
+        width: 500px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .user-disconnet {
+        width: 100%;
+        position: relative;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            position: absolute;
+            text-outline: 30px;
+            right: 20px;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        border-bottom: 1px solid $silver;
+        margin-top: 20px;
+        padding-left: 30px;
+
+        .active {
+            border-bottom: 4px solid $blue;
+        }
+    }
+
+    .menu-item {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        margin-right: 30px;
+        padding-bottom: 8px;
+        display: inline-block;
+        height: 38px;
+        &:hover {
+            border-bottom: 4px solid $blue;
+            text-decoration: none;
+            color: $secondary-text-color;
+        }
+    }
+}
+
+
+
+
+
+.fixed {
+    position: fixed;
+    background-color: rgba(#fff, .95);
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(#000, .15);
+
+
+    .header-search {
+        width: 35%;
+        position: relative;
+        float: right;
+        display: block;
+        height: 101px;
+        border-bottom: none;
+    }
+
+    .header-user {
+        display: none;
+    }
+
+    .menu {
+        width: 65%;
+        position: relative;
+        float: left;
+        border-bottom: none;
+        margin-top: 62px;
+    }
+}
