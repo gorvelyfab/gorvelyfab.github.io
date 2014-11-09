@@ -1,0 +1,252 @@
+/* line 1, base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 3, base/_base.scss */
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* line 10, base/_base.scss */
+body {
+  color: #444;
+  background-color: #eee;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* line 25, base/_base.scss */
+a {
+  color: #00f;
+  text-decoration: none;
+}
+
+/* line 26, base/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 28, base/_base.scss */
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+/* line 30, base/_base.scss */
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  height: 1px;
+}
+
+/** Layout **/
+/* line 41, base/_base.scss */
+.l-container {
+  margin: 0 35px;
+}
+
+/* line 46, base/_base.scss */
+.container {
+  font-family: serif;
+  color: #999;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 2.4rem;
+}
+
+/* line 54, base/_base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 1, modules/_about.scss */
+.about {
+  background-color: rgba(45, 164, 73, 0.7);
+  border: 1px solid #4bb564;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+  height: 90%;
+  width: 840px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  color: #fff;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* line 18, modules/_about.scss */
+.about--message span {
+  font-weight: 600;
+}
+
+/* line 23, modules/_about.scss */
+.about--title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 30, modules/_about.scss */
+.about--user .picture {
+  float: left;
+  width: 250px;
+}
+/* line 35, modules/_about.scss */
+.about--user .phones {
+  float: left;
+  width: 400px;
+  margin-top: 30px;
+}
+/* line 40, modules/_about.scss */
+.about--user .phones p {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+/* line 46, modules/_about.scss */
+.about--user .phones a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 50, modules/_about.scss */
+.about--user .phones a:hover {
+  text-decoration: underline;
+}
+
+/* line 57, modules/_about.scss */
+.about--dev, .about--used {
+  width: 50%;
+  float: left;
+}
+
+@media only screen and (max-width: 880px) {
+  /* line 64, modules/_about.scss */
+  .about {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    color: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+
+  /* line 74, modules/_about.scss */
+  .about--message {
+    text-align: justify;
+  }
+
+  /* line 78, modules/_about.scss */
+  body {
+    font-size: 1rem;
+  }
+
+  /* line 84, modules/_about.scss */
+  .about--user .picture {
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+  }
+  /* line 90, modules/_about.scss */
+  .about--user .phones {
+    float: left;
+    width: 60%;
+    margin-top: 30px;
+  }
+  /* line 95, modules/_about.scss */
+  .about--user .phones p {
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+  }
+}
+@media only screen and (max-width: 655px) {
+  /* line 106, modules/_about.scss */
+  .about--user .picture {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  /* line 114, modules/_about.scss */
+  .about--user .phones {
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* line 122, modules/_about.scss */
+  .about--dev, .about--used {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 1, modules/_animate.scss */
+.box {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/bgc.png");
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 12, modules/_animate.scss */
+.box__child {
+  position: absolute;
+  background-color: silver;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 245px;
+  left: 245px;
+}
+
+/* line 25, modules/_animate.scss */
+.red {
+  background-color: red;
+}
+
+/* line 28, modules/_animate.scss */
+.yellow {
+  background-color: yellow;
+}
+
+/* line 31, modules/_animate.scss */
+.blue {
+  background-color: blue;
+}
+
+/* line 34, modules/_animate.scss */
+.silver {
+  background-color: silver;
+}
+
+/* line 37, modules/_animate.scss */
+.pink {
+  background-color: pink;
+}
+
+/* line 40, modules/_animate.scss */
+.green {
+  background-color: green;
+}
