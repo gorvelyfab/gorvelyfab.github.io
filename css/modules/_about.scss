@@ -1,0 +1,128 @@
+.about {
+    background-color: rgba(#2da449, .7);
+    border: 1px solid #4bb564;
+    box-shadow: 0 1px 20px rgba(#000, .4);
+    height: 90%;
+    width: 840px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    z-index: 50;
+    color: #fff;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.about--message {
+    span {
+        font-weight: 600;
+    }
+}
+
+.about--title {
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+}
+
+.about--user {
+
+    .picture {
+        float: left;
+        width: 250px;
+    }
+
+    .phones {
+        float: left;
+        width: 400px;
+        margin-top: 30px;
+
+        p {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.about--dev, .about--used {
+    width: 50%;
+    float: left;
+}
+
+
+@media only screen and (max-width: 880px) {
+    .about {
+        box-shadow: 0 1px 10px rgba(#000, .4);
+        height: 98%;
+        width: 98%;
+        position: absolute;
+        color: #fff;
+        padding: 20px;
+        overflow-y: scroll;
+    }
+
+    .about--message {
+        text-align: justify;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .about--user {
+
+        .picture {
+            float: left;
+            width: 35%;
+            margin-right: 20px;
+        }
+
+        .phones {
+            float: left;
+            width: 60%;
+            margin-top: 30px;
+
+            p {
+                font-size: 1.2rem;
+                margin: 0 0 8px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .about--user {
+
+        .picture {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .phones {
+            text-align: center;
+            float: none;
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+
+    .about--dev, .about--used {
+        width: 100%;
+        float: none;
+    }
+}
+
+

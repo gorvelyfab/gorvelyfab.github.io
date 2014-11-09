@@ -1,0 +1,43 @@
+.box {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/bgc.png");
+    position: relative;
+    margin: 0 auto;
+}
+
+$width: 30px;
+$height: 30px;
+
+.box__child {
+    position: absolute;
+    background-color: silver;
+    width: $width;
+    height: $height;
+    border-radius: $width;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    top: (520px / 2 ) - ($height / 2);
+    left: (520px / 2 ) - ($width / 2);
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.silver {
+  background-color: silver;
+}
+.pink {
+  background-color: pink;
+}
+.green {
+  background-color: green;
+}
+
