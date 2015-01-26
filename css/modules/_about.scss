@@ -1,13 +1,13 @@
 .about {
-    background-color: rgba(#2da449, .7);
-    border: 1px solid #4bb564;
+    background-color: rgba(#2c3e50, .7);
+    border: 1px solid rgba(#2c3e50, .8);
     box-shadow: 0 1px 20px rgba(#000, .4);
     height: 90%;
     width: 840px;
     position: absolute;
     top: 50%;
     left: 50%;
-    @include transform(translate(-50%, -50%));
+    transform: translate(-50%, -50%);
     z-index: 50;
     color: #fff;
     padding: 30px;
